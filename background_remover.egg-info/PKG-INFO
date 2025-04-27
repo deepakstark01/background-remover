@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: background-remover
+Version: 0.1.0
+Summary: Background removal via ISNet
+Requires-Dist: torch
+Requires-Dist: pillow
