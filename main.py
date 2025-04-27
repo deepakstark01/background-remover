@@ -99,7 +99,7 @@ async def supported_formats():
     """Return list of supported image formats"""
     return {"supported_formats": list(ALLOWED_IMAGE_TYPES)}
 
-# For local development
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=80)
+# # For local development
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=80)
