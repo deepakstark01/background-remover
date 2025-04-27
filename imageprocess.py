@@ -1,4 +1,6 @@
 #imageprocess.py
+import io
+
 import cv2
 import os
 from PIL import Image
@@ -122,15 +124,15 @@ class ImageSegmenter:
         
         return im_rgba, pil_mask
 
-# Example usage:
+
 if __name__ == "__main__":
     # Initialize the segmenter
     segmenter = ImageSegmenter(model_path="./saved_models/isnet.pth")
-    
+
     # Process an image
     input_image_path = "joke.png"
     rgba_image, mask = segmenter.process_image(input_image_path)
-    
+
     # Save results
     rgba_image.save("output_rgba.png")
     mask.save("output_mask.png")
